@@ -172,7 +172,7 @@ class SingleLinkedList {
         Node temp = head;
         while (true) {
 
-            if (temp.next == null) {
+            if (temp == null) {
                 System.out.println("修改失败，没有该元素。");
                 return;
             }
@@ -240,6 +240,10 @@ class SingleLinkedList {
         return temp;
     }
 
+    /*
+    反转单链表
+    1.
+     */
     public void reverse() {
         if (head.next == null) {
             return;
