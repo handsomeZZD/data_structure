@@ -22,6 +22,7 @@ public class Calculator {
             //判断是否是数字。如果是数字加入到temp中
             if (isNum.matcher(strTemp).matches()) {
                 temp.append(strTemp);
+                //如果是最后一个位 直接push进栈
                 if (i==str.length()-1){
                     num.push(temp.toString());
                 }
